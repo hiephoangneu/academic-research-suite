@@ -1,0 +1,4 @@
+interface:
+  display_name: "Panel Econometrics Auditor"
+  short_description: "Audit panel designs, estimators, code, and claims"
+  default_prompt: "Use $panel-econometrics-auditor to audit this panel-data design and analysis."

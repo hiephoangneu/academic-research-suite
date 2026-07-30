@@ -1,0 +1,4 @@
+interface:
+  display_name: "PLS-SEM and fsQCA Reviewer"
+  short_description: "Review PLS-SEM, fsQCA, NCA, and integration"
+  default_prompt: "Use $pls-sem-fsqca-reviewer to assess this PLS-SEM and fsQCA analysis."

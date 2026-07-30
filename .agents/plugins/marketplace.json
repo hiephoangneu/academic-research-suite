@@ -1,0 +1,20 @@
+{
+  "name": "academic-research-suite",
+  "interface": {
+    "displayName": "Academic Research Suite"
+  },
+  "plugins": [
+    {
+      "name": "academic-research-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/academic-research-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

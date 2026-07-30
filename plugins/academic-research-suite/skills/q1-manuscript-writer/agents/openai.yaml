@@ -1,0 +1,4 @@
+interface:
+  display_name: "Q1 Manuscript Writer"
+  short_description: "Develop publication-ready Q1 and SSCI manuscripts"
+  default_prompt: "Use $q1-manuscript-writer to strengthen this manuscript for a top-tier journal."

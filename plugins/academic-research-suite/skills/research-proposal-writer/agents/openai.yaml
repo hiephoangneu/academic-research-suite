@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Proposal Writer"
+  short_description: "Build rigorous economics and business proposals"
+  default_prompt: "Use $research-proposal-writer to develop this research proposal systematically."

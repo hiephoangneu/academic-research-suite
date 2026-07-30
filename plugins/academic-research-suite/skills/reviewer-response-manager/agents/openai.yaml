@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reviewer Response Manager"
+  short_description: "Manage revisions and point-by-point responses"
+  default_prompt: "Use $reviewer-response-manager to prepare an evidence-based response to these reviewers."

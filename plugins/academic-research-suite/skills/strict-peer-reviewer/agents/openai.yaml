@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strict Peer Reviewer"
+  short_description: "Conduct rigorous journal-standard peer review"
+  default_prompt: "Use $strict-peer-reviewer to evaluate this manuscript as a demanding journal referee."

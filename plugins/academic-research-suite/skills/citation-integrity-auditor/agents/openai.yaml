@@ -1,0 +1,4 @@
+interface:
+  display_name: "Citation Integrity Auditor"
+  short_description: "Verify citations, references, DOIs, and alignment"
+  default_prompt: "Use $citation-integrity-auditor to verify every citation and reference in this manuscript."
