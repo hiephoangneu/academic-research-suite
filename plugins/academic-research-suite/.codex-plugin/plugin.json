@@ -1,7 +1,7 @@
 {
   "name": "academic-research-suite",
-  "version": "1.0.0",
-  "description": "Rigorous academic writing, review, methodology, citation, and revision workflows for economics, finance, and business research.",
+  "version": "1.1.0",
+  "description": "Rigorous literature synthesis, academic writing, review, methodology, citation, and revision workflows for economics, finance, and business research.",
   "author": {
     "name": "Vu Hiep",
     "url": "https://github.com/hiephoangneu"
@@ -13,6 +13,8 @@
     "academic-research",
     "economics",
     "finance",
+    "literature-review",
+    "theory-building",
     "peer-review",
     "econometrics",
     "PLS-SEM",
@@ -21,13 +23,13 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Academic Research Suite",
-    "shortDescription": "Publication-grade research writing and methodological review.",
-    "longDescription": "Seven focused workflows for developing Q1 and SSCI manuscripts, conducting strict peer review, writing research proposals, auditing panel econometrics, reviewing PLS-SEM and fsQCA, verifying citations, and managing reviewer responses.",
+    "shortDescription": "Literature synthesis, research writing, and methodological review.",
+    "longDescription": "Eight focused workflows for reviewing literature and building research frameworks, developing Q1 and SSCI manuscripts, conducting strict peer review, writing research proposals, auditing panel econometrics, reviewing PLS-SEM and fsQCA, verifying citations, and managing reviewer responses.",
     "developerName": "Vu Hiep",
     "category": "Education",
     "capabilities": [],
     "defaultPrompt": [
-      "Audit this manuscript for theory, method, and contribution.",
+      "Synthesize this literature and build a research framework.",
       "Verify every citation and reference in this paper.",
       "Assess this panel, PLS-SEM, or fsQCA analysis."
     ]

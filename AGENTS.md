@@ -2,7 +2,7 @@
 
 ## Repository expectations
 
-- Preserve the seven-skill architecture and keep each trigger boundary distinct.
+- Preserve the eight-skill architecture and keep each trigger boundary distinct.
 - Never add instructions that permit fabricated citations, data, results, page numbers, or completed changes.
 - Treat journal policies, rankings, regulations, software behaviour, and reporting standards as time-sensitive.
 - Require primary or authoritative sources when current verification matters.

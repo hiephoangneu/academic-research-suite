@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Review and Framework Builder"
+  short_description: "Synthesize literature into research frameworks"
+  default_prompt: "Use $literature-review to synthesize current literature and foundational theories into a defensible research framework."

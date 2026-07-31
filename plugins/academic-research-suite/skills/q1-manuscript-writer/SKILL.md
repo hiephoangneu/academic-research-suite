@@ -1,6 +1,6 @@
 ---
 name: q1-manuscript-writer
-description: Develop, restructure, shorten, or refine economics, finance, and business manuscripts for demanding Q1, SSCI, Scopus, or ABDC journals. Use for complete papers or individual sections such as titles, abstracts, introductions, literature reviews, hypotheses, methods, results, discussions, implications, limitations, conclusions, cover letters, and journal-specific rewrites. Do not use for independent gatekeeper review, exhaustive citation verification, or reviewer-response management.
+description: Develop, restructure, shorten, or refine economics, finance, and business manuscripts for demanding Q1, SSCI, Scopus, or ABDC journals. Use for complete papers or individual sections, including literature-review prose, when the evidence base and research framework already exist. Do not use to conduct a new literature search or build a framework from topics, keywords, or preselected variables; use literature-review for that discovery and synthesis workflow. Do not use for independent gatekeeper review, exhaustive citation verification, or reviewer-response management.
 ---
 
 # Q1 Manuscript Writer

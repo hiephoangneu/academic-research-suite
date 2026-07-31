@@ -1,6 +1,6 @@
 ---
 name: pls-sem-fsqca-reviewer
-description: Review, design, interpret, or improve PLS-SEM, fsQCA, Necessary Condition Analysis, and integrated symmetric-asymmetric research in business, management, information systems, marketing, and applied economics. Use for measurement models, higher-order constructs, structural models, mediation, moderation, MICOM, MGA, PLSpredict, IPMA, endogeneity, calibration, necessity, truth tables, solution interpretation, robustness, and cross-method integration. Do not fabricate software output or treat method multiplicity as theoretical contribution.
+description: Review, design, interpret, or improve PLS-SEM, fsQCA, Necessary Condition Analysis, and integrated symmetric-asymmetric research in business, management, information systems, marketing, and applied economics. Use when the primary task concerns measurement or structural model specification, analysis design, mediation, moderation, MICOM, MGA, prediction, endogeneity, calibration, necessity, truth tables, robustness, or cross-method integration. Use literature-review instead when the primary task is discovering evidence, synthesizing theories, or constructing a theory-grounded framework before method selection. Do not fabricate software output or treat method multiplicity as theoretical contribution.
 ---
 
 # PLS-SEM and fsQCA Reviewer

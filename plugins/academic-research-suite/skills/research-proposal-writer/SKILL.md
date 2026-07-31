@@ -1,6 +1,6 @@
 ---
 name: research-proposal-writer
-description: Design, write, restructure, or critically improve research proposals in economics, finance, business, management, and applied social science. Use for grant proposals, doctoral or master's proposals, national, ministry, university, or institutional research projects, including problem statements, literature reviews, conceptual models, objectives, hypotheses, methodology, work packages, outputs, budgets, risks, and impact. Do not use for completed-paper writing or for asserting current regulations without web verification.
+description: Design, write, restructure, or critically improve end-to-end research proposals in economics, finance, business, management, and applied social science. Use for grant proposals, doctoral or master's proposals, national, ministry, university, or institutional research projects, including problem statements, literature reviews, conceptual models, objectives, hypotheses, methodology, work packages, outputs, budgets, risks, and impact. Use literature-review instead when the primary task is standalone evidence discovery, theory synthesis, or framework construction from a topic, keywords, or variables. Do not use for completed-paper writing or for asserting current regulations without web verification.
 ---
 
 # Research Proposal Writer

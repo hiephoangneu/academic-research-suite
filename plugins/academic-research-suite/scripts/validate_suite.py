@@ -17,6 +17,7 @@ EXPECTED_SKILLS = {
     "pls-sem-fsqca-reviewer",
     "citation-integrity-auditor",
     "reviewer-response-manager",
+    "literature-review",
 }
 EM_DASH = chr(8212)
 SCAFFOLD_PLACEHOLDER = "[" + "TODO:"
@@ -57,7 +58,7 @@ def validate() -> list[str]:
         errors.append("plugin name must match the plugin directory")
     if manifest.get("skills") != "./skills/":
         errors.append("plugin manifest must point skills to ./skills/")
-    if manifest.get("version") != "1.0.0":
+    if manifest.get("version") != "1.1.0":
         errors.append("unexpected plugin version")
 
     skill_root = root / "skills"
