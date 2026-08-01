@@ -1,0 +1,19 @@
+{
+  "name": "academic-research-suite",
+  "owner": {
+    "name": "Vu Hiep"
+  },
+  "description": "Private academic research workflows for economics, finance, business, management, and applied social science.",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "academic-research-suite",
+      "source": "./plugins/academic-research-suite",
+      "description": "Eight research workflows for literature synthesis, manuscript development, peer review, proposal writing, methodological auditing, citation verification, and revision management.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Vu Hiep"
+      }
+    }
+  ]
+}
