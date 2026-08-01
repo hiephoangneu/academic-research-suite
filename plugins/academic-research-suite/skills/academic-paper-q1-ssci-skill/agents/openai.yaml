@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Paper Q1/SSCI"
+  short_description: "End-to-end Q1/SSCI paper development"
+  default_prompt: "Use $academic-paper-q1-ssci-skill to develop and quality-check this academic paper for a Q1 or SSCI journal."

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -18,6 +19,24 @@ EXPECTED_SKILLS = {
     "citation-integrity-auditor",
     "reviewer-response-manager",
     "literature-review",
+    "academic-paper-q1-ssci-skill",
+}
+UPSTREAM_SHA256 = {
+    "01-master-instructions.md": "2586492da125760453949e9ca20a43fd58cd7057a626961ee51c9d1e06972d6e",
+    "02-paper-structure.md": "5d9de68de2ec49653e8dd3006d6716f06b668052464790ed37117ba242e2040c",
+    "03-writing-guidelines.md": "55bf28a6ca48081b5472a80a6be0223b1caf482be9ad99ddee6213129bf751a4",
+    "04-methodology-templates.md": "b1038e402e30a18d31281439ac225f9da936a28a4b038a4d3a03fa0496083905",
+    "05-quality-checklist.md": "b4f1ab737f55da35b6652380e5d1b3cd4cd54c2e6dd2b9f50487a3d0f75819ac",
+    "06-literature-review-guide.md": "0fbd6d3af45c38ea326ec982b90e5887eb9d34d21cf748bcbaf08df19844d308",
+    "07-common-reviewer-comments.md": "00c7f5d40e48f85d9d3d28704f7def093276d14947544a36423a0fc050703ab9",
+    "09-academic-phrases-bank.md": "a27cab7a7025aab48fdfc21f0e1c9f3d0fc9769cbdb714b51e52b4586fd08c37",
+    "10-response-letter-template.md": "3592b2255e48dd9cad69912ab46688382e9f11b918ad25a5062c8b970d8e7af0",
+    "README.md": "3176fdaa1ad0b0fb04b9f53bb63bdb52ab7889cc11132054ff293c147195bc3f",
+    "SKILL.md": "c14aa0582a5a8cfba4dfba1161e3d8b4be47b370ee5317bf547a231c4e5bb736",
+    "examples_sample-abstract.md": "ef72b5665e12e9356700de97ab61c20644073d3bebab5c75351539947d975c73",
+    "examples_sample-hypothesis-args.md": "767b3bd5253c7bef188081a57579d49333c080f07c7a1ed70e69a52d276dcb56",
+    "examples_sample-introduction.md": "4ec511bcb8fd6ed0fd8008fde0b75ce20ee06c266246b9e0e35640dd5e1af1e9",
+    "examples_sample-response-letter.md": "7d5304e146defe86e57fd05e313578142f8c4e62d8fb11532dc93ca82f46c69a",
 }
 EM_DASH = chr(8212)
 SCAFFOLD_PLACEHOLDER = "[" + "TODO:"
@@ -58,7 +77,7 @@ def validate() -> list[str]:
         errors.append("plugin name must match the plugin directory")
     if manifest.get("skills") != "./skills/":
         errors.append("plugin manifest must point skills to ./skills/")
-    if manifest.get("version") != "1.1.0":
+    if manifest.get("version") != "1.2.0":
         errors.append("unexpected plugin version")
 
     skill_root = root / "skills"
@@ -107,10 +126,36 @@ def validate() -> list[str]:
             if EM_DASH in agent_text or "TODO" in agent_text:
                 errors.append(f"{agent_path}: contains forbidden placeholder or dash")
 
+    upstream_root = (
+        skill_root
+        / "academic-paper-q1-ssci-skill"
+        / "references"
+        / "upstream"
+    )
+    actual_upstream = (
+        {path.name for path in upstream_root.iterdir() if path.is_file()}
+        if upstream_root.is_dir()
+        else set()
+    )
+    if actual_upstream != set(UPSTREAM_SHA256):
+        errors.append(
+            "vendored upstream file set mismatch: "
+            f"expected {sorted(UPSTREAM_SHA256)}, found {sorted(actual_upstream)}"
+        )
+    for filename, expected_hash in UPSTREAM_SHA256.items():
+        path = upstream_root / filename
+        if not path.is_file():
+            continue
+        actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+        if actual_hash != expected_hash:
+            errors.append(f"{path}: differs from the pinned upstream source")
+
     for path in root.rglob("*"):
         if not path.is_file() or ".git" in path.parts:
             continue
         if path.suffix.lower() not in {".md", ".yaml", ".yml", ".json", ".py"}:
+            continue
+        if upstream_root in path.parents:
             continue
         text = path.read_text(encoding="utf-8")
         if SCAFFOLD_PLACEHOLDER in text:
