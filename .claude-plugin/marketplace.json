@@ -9,8 +9,8 @@
     {
       "name": "academic-research-suite",
       "source": "./plugins/academic-research-suite",
-      "description": "Nine research workflows for literature synthesis, end-to-end paper development, peer review, proposal writing, methodological auditing, citation verification, and revision management.",
-      "version": "1.2.0",
+      "description": "Ten research workflows for literature synthesis, full theory-driven model development, end-to-end paper development, peer review, proposal writing, methodological auditing, citation verification, and revision management.",
+      "version": "1.3.0",
       "author": {
         "name": "Vu Hiep"
       }
