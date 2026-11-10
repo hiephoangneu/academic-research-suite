@@ -1,0 +1,4 @@
+interface:
+  display_name: "Theory-Driven Model Developer"
+  short_description: "Develop verified literature reviews, hypotheses and research models"
+  default_prompt: "Use $theory-driven-model-developer to build a complete web-verified empirical and theoretical literature review from my research idea, identify defensible research gaps, develop hypotheses, and specify the constructs and proposed research model."

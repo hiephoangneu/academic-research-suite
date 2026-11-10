@@ -2,7 +2,8 @@
 
 ## Repository expectations
 
-- Preserve the nine-skill architecture and keep each trigger boundary distinct.
+- Preserve the ten-skill architecture and keep each trigger boundary distinct.
+- Keep `literature-review` focused on evidence discovery and framework mapping; route complete theory-to-construct reports with formal hypotheses to `theory-driven-model-developer`.
 - Never add instructions that permit fabricated citations, data, results, page numbers, or completed changes.
 - Treat journal policies, rankings, regulations, software behaviour, and reporting standards as time-sensitive.
 - Require primary or authoritative sources when current verification matters.

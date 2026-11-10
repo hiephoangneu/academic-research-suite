@@ -3,7 +3,7 @@
 Academic Research Suite is a private Codex plugin for publication-grade economics,
 finance, and business research. It separates literature synthesis and framework
 building, writing, methodological auditing, peer review, citation verification,
-and revision management into nine focused skills.
+and revision management into ten focused skills.
 
 ## Skills
 
@@ -17,13 +17,14 @@ and revision management into nine focused skills.
 | `citation-integrity-auditor` | Verify in-text citations, reference metadata, evidentiary support, and retraction status. |
 | `reviewer-response-manager` | Manage reviewer comments, response matrices, manuscript locations, and completion status. |
 | `literature-review` | Synthesize current evidence and foundational theories into defensible research frameworks. |
+| `theory-driven-model-developer` | Write a verified, integrated empirical and theoretical review report, develop research gaps and hypotheses, and specify a latent-construct model. |
 | `academic-paper-q1-ssci-skill` | Orchestrate end-to-end Q1/SSCI paper development through the compatible imported command workflow. |
 
 ## Repository structure
 
 - `.agents/plugins/marketplace.json`: repository marketplace entry
 - `plugins/academic-research-suite/.codex-plugin/plugin.json`: plugin manifest
-- `plugins/academic-research-suite/skills/`: nine skill packages
+- `plugins/academic-research-suite/skills/`: ten skill packages
 - `plugins/academic-research-suite/THIRD_PARTY_NOTICES.md`: attribution and licensing for imported upstream materials
 - `plugins/academic-research-suite/scripts/validate_suite.py`: cross-skill validator
 - `plugins/academic-research-suite/tests/test-cases.md`: routing and safety test cases

@@ -19,6 +19,7 @@ EXPECTED_SKILLS = {
     "citation-integrity-auditor",
     "reviewer-response-manager",
     "literature-review",
+    "theory-driven-model-developer",
     "academic-paper-q1-ssci-skill",
 }
 UPSTREAM_SHA256 = {
@@ -77,7 +78,7 @@ def validate() -> list[str]:
         errors.append("plugin name must match the plugin directory")
     if manifest.get("skills") != "./skills/":
         errors.append("plugin manifest must point skills to ./skills/")
-    if manifest.get("version") != "1.2.0":
+    if manifest.get("version") != "1.3.0":
         errors.append("unexpected plugin version")
 
     skill_root = root / "skills"

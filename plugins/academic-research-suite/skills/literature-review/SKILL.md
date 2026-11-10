@@ -1,6 +1,6 @@
 ---
 name: literature-review
-description: Conduct rigorous, current, theory-grounded literature reviews and develop defensible research frameworks from a topic, keywords, phenomenon, research question, or preselected variables in economics, finance, business, management, and applied social science. Use for review scoping, search-strategy design, foundational-theory mapping, construct clarification, evidence synthesis, contradiction and gap analysis, conceptual-model development, and proposition or hypothesis foundations. Do not use merely to polish an already evidenced manuscript section, write an entire proposal, independently referee a manuscript, or audit every citation in a completed document.
+description: Conduct rigorous, current, theory-grounded literature reviews and develop defensible research frameworks from a topic, keywords, phenomenon, research question, or preselected variables in economics, finance, business, management, and applied social science. Use for evidence-discovery-first tasks, review scoping, search-strategy design, foundational-theory mapping, construct clarification, evidence synthesis, contradiction and gap analysis, conceptual-model development, and proposition or hypothesis foundations. For a complete authored report combining empirical and theoretical reviews, formal hypotheses, construct specifications, and a final model, use theory-driven-model-developer. Do not use merely to polish an already evidenced manuscript section, write an entire proposal, independently referee a manuscript, or audit every citation in a completed document.
 ---
 
 # Literature Review and Framework Builder
@@ -76,6 +76,6 @@ Adapt the depth to the request and return, as applicable:
 10. Verified reference list and a list of sources requiring further access
 11. Suggested handoff to `q1-manuscript-writer`, `research-proposal-writer`, `strict-peer-reviewer`, `citation-integrity-auditor`, `panel-econometrics-auditor`, or `pls-sem-fsqca-reviewer` when the next task falls within those workflows
 
-Use this skill when evidence discovery, theory synthesis, or framework construction is primary, even if the result will later become a manuscript section. Use `q1-manuscript-writer` after the evidence base and framework are fixed.
+Use this skill when evidence discovery, theory synthesis, or framework construction is primary, even if the result will later become a manuscript section. Use `theory-driven-model-developer` when a full integrated literature-review report with model specification and formal hypotheses is requested. Use `q1-manuscript-writer` after the evidence base and framework are fixed.
 
 Read [references/literature-review-protocol.md](references/literature-review-protocol.md) for review-mode selection, search and evidence templates, framework tests, and failure checks.

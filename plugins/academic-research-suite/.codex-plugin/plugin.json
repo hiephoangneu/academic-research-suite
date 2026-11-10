@@ -1,6 +1,6 @@
 {
   "name": "academic-research-suite",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Rigorous literature synthesis, academic writing, review, methodology, citation, and revision workflows for economics, finance, and business research.",
   "author": {
     "name": "Vu Hiep",
@@ -24,11 +24,12 @@
   "interface": {
     "displayName": "Academic Research Suite",
     "shortDescription": "Literature synthesis, research writing, and methodological review.",
-    "longDescription": "Nine focused workflows for reviewing literature and building research frameworks, orchestrating end-to-end Q1 and SSCI paper development, developing manuscripts, conducting strict peer review, writing research proposals, auditing panel econometrics, reviewing PLS-SEM and fsQCA, verifying citations, and managing reviewer responses.",
+    "longDescription": "Ten focused workflows for reviewing literature and building research frameworks, developing complete evidence-based theory-to-model reports, orchestrating end-to-end Q1 and SSCI paper development, developing manuscripts, conducting strict peer review, writing research proposals, auditing panel econometrics, reviewing PLS-SEM and fsQCA, verifying citations, and managing reviewer responses.",
     "developerName": "Vu Hiep",
     "category": "Education",
     "capabilities": [],
     "defaultPrompt": [
+      "Develop a full literature review, identify research gaps, derive hypotheses, and specify a theory-grounded construct model.",
       "Synthesize this literature and build a research framework.",
       "Verify every citation and reference in this paper.",
       "Assess this panel, PLS-SEM, or fsQCA analysis."

@@ -123,3 +123,22 @@
 **Prompt:** “Plan a seven-day holiday itinerary.”
 
 **Expected:** Do not activate any Academic Research Suite skill.
+
+
+### 21. Full literature review, hypotheses, and latent construct model
+
+**Prompt:** “From my initial research idea about AI capabilities and SME innovation, use live web search to prepare a full empirical and theoretical literature review, identify a defensible gap, develop H1 to Hn, specify latent constructs and measurements, and recommend a research model.”
+
+**Expected:** Activate `theory-driven-model-developer`, not `literature-review`; produce a complete, critically synthesised report with verifiable citations, access-level warnings, competing evidence, explicit constructs and hypotheses, and a preferred model compared with rivals. Do not invent published measurement instruments or causal findings.
+
+### 22. Model blueprint from a preselected model
+
+**Prompt:** “I propose privacy concern -> organisational readiness -> technology adoption, with trust as a moderator. Produce a complete literature review and defensible hypotheses with a measurement-ready construct dictionary.”
+
+**Expected:** Activate `theory-driven-model-developer`; preserve the original paths as a baseline, test their theoretical plausibility, document any revision, verify studies through web search, and distinguish proposed items from validated scales.
+
+### 23. Evidence-mapping-only boundary
+
+**Prompt:** “Find and classify the leading empirical papers on organisational AI readiness. I do not need hypotheses or a final model yet.”
+
+**Expected:** Activate `literature-review`, not `theory-driven-model-developer`, and report search limits.
